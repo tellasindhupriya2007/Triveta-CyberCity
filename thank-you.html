@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — TREVITA by Cybercity &amp; KONU</title>
+  <meta name="description" content="Thank you for booking a site visit at TREVITA by Cybercity. The KONU sales team will reach you soon.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0C0D0E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "onyx": "#0C0D0E",
+            "onyx-deep": "#08090A",
+            "alabaster": "#FAFAF7",
+            "alabaster-warm": "#F4F1EA",
+            "stone-champagne": "#E8E2D5",
+            "stone-border": "#D8D0C3",
+            "gold-trevita": "#C8A86B",
+            "charcoal": "#1A1A1A",
+            "charcoal-muted": "#4A4A4A"
+          },
+          fontFamily: {
+            serif: ["'Cormorant Garamond'", "Georgia", "serif"],
+            sans: ["'Manrope'", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #0C0D0E;
+        color: #1A1A1A;
+        font-family: 'Manrope', sans-serif;
+      }
+    }
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    @keyframes settleIn {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 14px, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .thankyou-enter {
+      animation: settleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .thankyou-enter {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-onyx-deep text-charcoal antialiased relative flex items-center justify-center p-6 sm:p-10 selection:bg-gold-trevita selection:text-onyx">
+  <div class="fixed inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url('/assets/images/obsidian-grain-bg.webp'); background-size: cover; background-position: center; opacity: 0.16;"></div>
+
+  <main class="relative z-10 w-full max-w-2xl thankyou-enter">
+    <section class="bg-[#F4F1EA] border border-stone-border shadow-2xl p-8 sm:p-14 text-center relative">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-onyx"></div>
+
+      <!-- All Three Partner & Project Logos -->
+      <div class="flex flex-wrap items-center justify-center gap-5 sm:gap-8 pb-8 mb-8 border-b border-onyx/15 cursor-default select-none">
+        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white border border-onyx/15 p-2 flex items-center justify-center">
+          <img
+            src="/assets/images/trevita-emblem.webp"
+            alt="TREVITA by Cybercity Logo"
+            width="160"
+            height="147"
+            loading="eager"
+            decoding="sync"
+            referrerpolicy="no-referrer"
+            class="w-full h-full object-contain"
+          >
+        </div>
+
+        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white border border-onyx/15 p-2 flex items-center justify-center">
+          <img
+            src="/assets/images/cybercity-20yrs-badge.webp"
+            alt="Cybercity 20 Years Logo"
+            width="200"
+            height="197"
+            loading="eager"
+            decoding="sync"
+            referrerpolicy="no-referrer"
+            class="w-full h-full object-contain"
+          >
+        </div>
+
+        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white border border-onyx/15 p-2 flex items-center justify-center">
+          <img
+            src="/assets/images/konu-advisory-logo.webp"
+            alt="KONU Logo"
+            width="200"
+            height="200"
+            loading="eager"
+            decoding="sync"
+            referrerpolicy="no-referrer"
+            class="w-full h-full object-contain"
+          >
+        </div>
+      </div>
+
+      <!-- Minimal Check Mark -->
+      <div class="mx-auto mb-6 w-11 h-11 border border-onyx/25 bg-[#FAFAF7] flex items-center justify-center text-onyx" aria-hidden="true">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <!-- Confirmation Message -->
+      <h1 class="font-cormorant text-4xl sm:text-5xl text-onyx font-normal tracking-tight leading-tight text-balance">
+        Thank You
+      </h1>
+
+      <p class="mt-4 text-sm sm:text-base text-charcoal-muted font-normal leading-relaxed max-w-md mx-auto">
+        Your site visit request has been received. The KONU sales team will reach you soon.
+      </p>
+
+      <p class="mt-6 text-[11px] uppercase tracking-[0.18em] text-onyx/65 font-medium">
+        TREVITA by Cybercity · Kondapur, Hyderabad
+      </p>
+
+      <div class="mt-9">
+        <a
+          href="/"
+          class="inline-flex items-center justify-center px-8 py-3.5 bg-onyx text-[#FAFAF7] text-xs font-bold uppercase tracking-widest hover:bg-charcoal transition-colors border border-onyx whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-onyx"
+        >
+          Back to Home
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

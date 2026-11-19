@@ -1,11 +1,57 @@
 <!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>TREVITA by Cybercity — True Luxury at Kondapur, Hyderabad</title>
+<title>TREVITA by Cybercity — Luxury 3 &amp; 4 BHK Homes in Kondapur</title>
+<meta name="description" content="Explore TREVITA by Cybercity opposite Botanical Garden, Kondapur, Hyderabad. Luxury 3 &amp; 4 BHK homes, 60,000 sq.ft. clubhouse, and rooftop skyline deck.">
+<meta name="keywords" content="TREVITA by Cybercity, luxury apartments Kondapur, 3 BHK Kondapur Hyderabad, 4 BHK Kondapur, Cybercity Kondapur, Botanical Garden apartments Hyderabad">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0C0D0E">
+<link rel="canonical" id="canonical-link" href="/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TREVITA by Cybercity">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="TREVITA by Cybercity — Luxury 3 &amp; 4 BHK Homes in Kondapur">
+<meta property="og:description" content="Explore TREVITA by Cybercity opposite Botanical Garden, Kondapur, Hyderabad. Luxury 3 &amp; 4 BHK homes, 60,000 sq.ft. clubhouse, and rooftop skyline deck.">
+<meta property="og:image" content="/assets/images/hero-towers.webp">
+<meta property="og:image:alt" content="TREVITA by Cybercity three luxury residential towers at Kondapur, Hyderabad">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TREVITA by Cybercity — Luxury 3 &amp; 4 BHK Homes in Kondapur">
+<meta name="twitter:description" content="Explore TREVITA by Cybercity opposite Botanical Garden, Kondapur, Hyderabad. Luxury 3 &amp; 4 BHK homes, 60,000 sq.ft. clubhouse, and rooftop skyline deck.">
+<meta name="twitter:image" content="/assets/images/hero-towers.webp">
+<link rel="preload" as="image" type="image/webp" href="/assets/images/hero-towers.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ApartmentComplex",
+  "name": "TREVITA by Cybercity",
+  "description": "Luxury 3 and 4 BHK sky residences across 6.53 acres opposite the Botanical Garden in Kondapur, Hyderabad, featuring Club Trevita and a rooftop Skyline Deck.",
+  "numberOfAccommodationUnits": 601,
+  "petsAllowed": true,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Opposite Botanical Garden, Kondapur",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500084",
+    "addressCountry": "IN"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Club Trevita (60,000 Sq.Ft Clubhouse)", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Skyline Deck (66,000 Sq.Ft Rooftop)", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "AURM Automated Secure Lockers", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Smart Parcel Way Automated Delivery", "value": true }
+  ],
+  "developer": {
+    "@type": "Organization",
+    "name": "Cybercity Builders & Developers"
+  },
+  "image": "/assets/images/hero-towers.webp"
+}
+</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
@@ -55,10 +101,9 @@
     }
     .font-cormorant { font-family: 'Cormorant Garamond', Georgia, serif; }
     
-    /* Image Crispness and Optimization */
+    /* Image Quality and Smooth Resampling */
     img {
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: crisp-edges;
+      image-rendering: auto;
     }
 
     /* Refined Gold Shimmer and Accents */
@@ -100,28 +145,75 @@
     }
     
     .custom-scroll::-webkit-scrollbar { display: none; }
+
+    /* GPU-Composited Scroll Reveal Animations */
+    .reveal-up {
+      opacity: 0;
+      transform: translate3d(0, 26px, 0);
+      transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.975) translate3d(0, 18px, 0);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-up.is-visible,
+    .reveal-scale.is-visible {
+      opacity: 1;
+      transform: none;
+      will-change: auto;
+    }
+    .reveal-delay-1 { transition-delay: 80ms; }
+    .reveal-delay-2 { transition-delay: 160ms; }
+    .reveal-delay-3 { transition-delay: 240ms; }
+    .reveal-delay-4 { transition-delay: 320ms; }
+    .reveal-delay-5 { transition-delay: 400ms; }
+
+    /* Non-blocking Hero Subtle Entrance */
+    @keyframes heroSettle {
+      from { transform: translate3d(0, 12px, 0); }
+      to { transform: translate3d(0, 0, 0); }
+    }
+    .hero-enter {
+      animation: heroSettle 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-up, .reveal-scale {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .hero-enter, .animate-float {
+        animation: none !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-onyx text-charcoal antialiased selection:bg-gold-trevita selection:text-onyx">
 <!-- STICKY ARCHITECTURAL ONYX & GOLD HEADER -->
-<header class="fixed top-0 inset-x-0 z-50 bg-onyx-deep/90 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4 xl:gap-8"><a class="flex items-center gap-3 group flex-shrink-0" href="#"><div class="w-9 h-9 sm:w-10 sm:h-10 overflow-hidden rounded-sm flex items-center justify-center p-0.5 border border-gold-trevita/40 bg-onyx-surface group-hover:border-gold-trevita transition-colors"><img alt="TREVITA Emblem" class="w-full h-full object-contain filter drop-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJCPp4z2nE87LfqQO9OpmiVk6m9x6DFchvRlEvEb6F5KIYkb9maSXhgLvVb4Mss0m7IhJXIPq3dp_XCzOrhdt2v7TywIUDGFGY7zhZLpT4NC4bQ2t16gBwNWtC15XUirEKCtXo7OC16xJPYd-gMEexH_6Do_w9BiDTOiJPiq8r64z_DfZRHUTkIJSnbQjO9mrG1zZRjJImbG2mrIbBKD32hoyng7vHS2mGxECs4aokM3vf_eLIrAih_w"></div><div class="flex flex-col"><span class="font-cormorant text-xl sm:text-2xl tracking-[0.22em] font-medium text-alabaster leading-none uppercase">TREVITA</span><span class="text-[8px] sm:text-[9px] font-sans font-semibold tracking-widest-plus text-gold-trevita uppercase mt-1">Kondapur · Hyderabad</span></div><div class="h-6 w-px bg-white/15 hidden md:block"></div><div class="hidden md:flex items-center gap-2 pl-0.5"><div class="w-7 h-7 sm:w-8 sm:h-8 rounded-sm overflow-hidden flex items-center justify-center bg-white p-0.5 border border-gold-trevita/30 shadow-sm flex-shrink-0"><img alt="KONU Logo" class="w-full h-full object-contain filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMqTxV0XDHbpuB9PaGexIcRFsrUOVNeIIqFedvjiCYT2WzsjQKgOIKBCwONNmj5Yyt2gEWcl4r9lunktznz9eYXlWy3o2uttyEXNtD09Ceof5Xn32lX7lAlpHsnLay5SFqmVYoD7nJDcXxLbRm1NJm_08d1Sl8cV2jNyZCfUiz_SR4j4P2Re1GSvHRmH3emrT8JO12f-PQ9EtO6GOBs7pJE5xgpnrAsKlR41p80WMFKSzb4oRrag8ikA"></div><div class="flex flex-col"><span class="text-[8px] uppercase font-semibold tracking-wider text-gold-trevita leading-none">Marketing Partner</span><span class="font-cormorant text-xs sm:text-sm text-alabaster font-medium tracking-wide leading-tight">KONU</span></div></div></a><nav class="hidden xl:flex items-center gap-6 text-[11px] font-semibold tracking-monograph uppercase text-alabaster/70 flex-shrink-0"><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#overview">Overview</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#residences">Residences</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#lifestyle">Amenities</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#location">Location</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#gallery">Gallery</a></nav><div class="flex items-center gap-3 sm:gap-4 flex-shrink-0"><a class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 bg-gold-trevita text-onyx text-[11px] font-bold uppercase tracking-widest hover:bg-gold-light transition-all duration-300 shadow-md shadow-gold-trevita/10 whitespace-nowrap" href="#enquiry">Schedule a Visit</a><button aria-label="Toggle Menu" class="xl:hidden p-2 text-alabaster focus:outline-none flex items-center justify-center hover:text-gold-trevita transition-colors" id="mobile-menu-btn"><span class="material-symbols-outlined text-2xl">menu</span></button></div></div>
+<header class="fixed top-0 inset-x-0 z-50 bg-onyx-deep/90 backdrop-blur-xl border-b border-white/10 transition-all duration-300" id="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4 xl:gap-8"><div class="flex items-center gap-3 flex-shrink-0 cursor-default select-none"><div class="w-9 h-9 sm:w-10 sm:h-10 overflow-hidden rounded-sm flex items-center justify-center p-0.5 border border-gold-trevita/40 bg-onyx-surface"><img alt="TREVITA Emblem" class="w-full h-full object-contain filter drop-shadow" src="/assets/images/trevita-emblem.webp" width="160" height="147" loading="eager" decoding="sync"></div><div class="flex flex-col"><span class="font-cormorant text-xl sm:text-2xl tracking-[0.22em] font-medium text-alabaster leading-none uppercase">TREVITA</span><span class="text-[8px] sm:text-[9px] font-sans font-semibold tracking-widest-plus text-gold-trevita uppercase mt-1">Kondapur · Hyderabad</span></div><div class="h-6 w-px bg-white/15 hidden md:block"></div><div class="hidden md:flex items-center gap-2 pl-0.5"><div class="w-7 h-7 sm:w-8 sm:h-8 rounded-sm overflow-hidden flex items-center justify-center bg-white p-0.5 border border-gold-trevita/30 shadow-sm flex-shrink-0"><img alt="KONU Logo" class="w-full h-full object-contain filter contrast-105" src="/assets/images/konu-logo.webp" width="160" height="160" loading="eager" decoding="sync"></div><div class="flex flex-col"><span class="text-[8px] uppercase font-semibold tracking-wider text-gold-trevita leading-none">Marketing Partner</span><span class="font-cormorant text-xs sm:text-sm text-alabaster font-medium tracking-wide leading-tight">KONU</span></div></div></div><nav class="hidden xl:flex items-center gap-6 text-[11px] font-semibold tracking-monograph uppercase text-alabaster/70 flex-shrink-0"><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#overview">Overview</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#residences">Residences</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#lifestyle">Amenities</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#location">Location</a><a class="nav-link-hover hover:text-gold-light transition-colors pb-1" href="#gallery">Gallery</a></nav><div class="flex items-center gap-3 sm:gap-4 flex-shrink-0"><a class="inline-flex items-center justify-center px-4 sm:px-5 py-2.5 bg-gold-trevita text-onyx text-[11px] font-bold uppercase tracking-widest hover:bg-gold-light transition-all duration-300 shadow-md shadow-gold-trevita/10 whitespace-nowrap" href="#enquiry">Schedule a Visit</a><button aria-label="Toggle Menu" class="xl:hidden p-2 text-alabaster focus:outline-none flex items-center justify-center hover:text-gold-trevita transition-colors" id="mobile-menu-btn"><span class="material-symbols-outlined text-2xl">menu</span></button></div></div>
 </header>
 <!-- Mobile Drawer -->
 <div class="fixed inset-0 z-40 bg-onyx-deep/98 backdrop-blur-2xl flex flex-col justify-center items-center gap-6 p-8 transition-all duration-300 opacity-0 pointer-events-none xl:hidden" id="mobile-menu"><button class="absolute top-6 right-6 text-gold-trevita p-2" id="mobile-close-btn"><span class="material-symbols-outlined text-3xl">close</span></button><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#overview">Overview</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#residences">The Residences</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#lifestyle">Lifestyle &amp; Amenities</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#skyline">Skyline Deck</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#living">Smarter Living</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#location">Location &amp; Map</a><a class="text-xl font-cormorant tracking-widest uppercase text-alabaster hover:text-gold-trevita mobile-nav-link" href="#gallery">Visual Gallery</a><a class="mt-4 px-8 py-3 bg-gold-trevita text-onyx text-xs font-bold tracking-widest uppercase mobile-nav-link" href="#enquiry">Book Private Preview</a></div>
 <main class="pt-20">
 <!-- ==================== SECTION 1: HERO (CINEMATIC NOIR & GOLD) ==================== -->
-<section class="relative w-full min-h-[92vh] flex flex-col justify-between overflow-hidden bg-onyx-deep"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 0.2;"></div>
+<section class="relative w-full min-h-[92vh] flex flex-col justify-between overflow-hidden bg-onyx-deep"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity overflow-hidden" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 0.2;"></div>
 <!-- Architectural Hero Visual with Crisp Definition -->
 <div class="absolute inset-0 z-0 overflow-hidden">
-<img alt="TREVITA by Cybercity 3 Magnificent Towers" class="w-full h-full object-cover object-center scale-100 hover:scale-[1.02] transition-transform duration-[7000ms] ease-out brightness-95 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkYCOze5cSXHHWi3dwGu9z7P4chTq3eENSJwhqmBD26Xgjv5WlKcPft50lsweqfZG2ERWEn8qoAZu9A8A3plMbcpB29obLF5JsltsQF3NjfzWbV1HZCWrZJftRcZkUlPQoYcrg1CZjZq2skJrhqIUP--8yrU_WTBAQ1ijVKFWrUtLeLzmznreErEvtBvllvTG4QEEduusu4SSXBi6lEYTo38MQ-l7qH6I-zRmixxbe">
+<img alt="TREVITA by Cybercity 3 Magnificent Towers" class="w-full h-full object-cover object-center scale-100 hover:scale-[1.02] transition-transform duration-[7000ms] ease-out brightness-95 contrast-105" decoding="sync" fetchpriority="high" height="768" loading="eager" src="/assets/images/hero-towers.webp" width="1376">
 <!-- Noir Architectural Gradient Overlays -->
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-onyx-deep/50 to-transparent"></div>
 <div class="absolute inset-0 bg-gradient-to-r from-onyx-deep/90 via-onyx-deep/40 to-transparent"></div>
 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-trevita/10 via-transparent to-transparent pointer-events-none"></div>
 </div>
 <!-- Hero Main Content -->
-<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full mt-auto pb-16 pt-28">
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full mt-auto pb-16 pt-28 hero-enter">
 <div class="max-w-3xl space-y-6">
 <!-- Location & Brand Tag -->
 <div class="inline-flex items-center gap-3 px-4 py-2 bg-onyx-surface/80 backdrop-blur-md border border-gold-trevita/30 text-gold-light shadow-xl">
@@ -169,11 +261,11 @@
 </div>
 </section>
 <!-- ==================== SECTION 2: PROJECT INTRODUCTION (LUXURY WARM ALABASTER BEIGE) ==================== -->
-<section class="py-24 lg:py-32 bg-alabaster-warm relative border-b border-stone-border" id="overview"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 360px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<section class="py-24 lg:py-32 bg-alabaster-warm relative border-b border-stone-border" id="overview"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 360px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 <!-- Editorial Lead -->
-<div class="lg:col-span-5 space-y-6">
+<div class="lg:col-span-5 space-y-6 reveal-up">
 <div class="inline-flex items-center gap-2.5 text-gold-muted">
 <span class="w-8 h-px bg-gold-trevita"></span>
 <span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Project Philosophy</span>
@@ -184,8 +276,8 @@
 </h2>
 <p class="font-sans text-charcoal-muted text-base leading-relaxed font-light">Spread across 6.5 acres, TREVITA brings together expansive residences, open green spaces, and modern amenities in one of Hyderabad's most connected neighborhoods.</p>
 <div class="relative pt-4">
-<div class="relative overflow-hidden border border-stone-border shadow-md group aspect-[16/10]">
-<img alt="Lush landscaped internal boulevard at Trevita" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzzs9dxhf-SSk2ey93RF8RurpwlYAC26gfbLKVHWa1O_5YZfk405oGeL-mWl3X0zacmGRf1vxtL5IzYCP-mq-F2TjWS1HIvEeevj9i6MhfLODi3coUf0aMi_2muZkY0G4h59ir5NFTZVbP2i9iYgQ8shJEPA_H44XH8vRQvpNvUqlARhHwbGJP0CKO5FDbWzj98leFC7balMkiG0j19cpdBVJSmnROlHWx1YP4kBZ6kYQPhtcZJ4qFxg">
+<div class="relative overflow-hidden border border-stone-border shadow-md group aspect-[16/10] reveal-scale reveal-delay-1">
+<img alt="Tranquil lakeside promenade and landscaped garden pavilion at Trevita" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="/assets/images/project-philosophy-promenade.webp" width="1200" height="670" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/85 via-onyx-deep/20 to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster">
 <p class="text-[10px] font-sans uppercase tracking-widest text-gold-light font-semibold">Tranquil Lakefront &amp; Promenade</p>
@@ -197,8 +289,8 @@
 </div>
 <!-- Statistics Grid (6 Metrics Blocks in Warm Stone & Crisp Charcoal) -->
 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5"><!-- Card 1: Landmark Parcel -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-1 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Landscape Parcel</span>
 <div class="flex items-baseline gap-2">
@@ -209,8 +301,8 @@
 </div>
 </div>
 <!-- Card 2: Sculptural Form -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-2 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Sculptural Form</span>
 <div class="flex items-baseline gap-2">
@@ -221,8 +313,8 @@
 </div>
 </div>
 <!-- Card 3: Exclusive Community -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-1 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Exclusive Community</span>
 <div class="flex items-baseline gap-2">
@@ -233,8 +325,8 @@
 </div>
 </div>
 <!-- Card 4: Open Vistas -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-2 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Open Vistas</span>
 <div class="flex items-baseline gap-2">
@@ -245,8 +337,8 @@
 </div>
 </div>
 <!-- Card 5: Skyline Profile -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-1 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Skyline Profile</span>
 <div class="flex items-baseline gap-2">
@@ -257,8 +349,8 @@
 </div>
 </div>
 <!-- Card 6: Floor Privacy -->
-<div class="bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
-<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQJA90K-RgIRZpLRMw8XCFJTK-_xiXCr81JHwRLgXAyZmmQXMm7oUsazpkuyPr9vlNzvc7ETDGl9pXte-ugysQWam4HJCjd3jecXPtKsvBhdKw_hmIG6VKjiTLNVhpQmts744Dq_82azE-8oki5reasb1XWFkZ1GQ2uAjKvmQfFGQI539KV8ge1_G1aqrRH7IVGo4wH01FIPHwmwblKp2PkH6fXz92r6P0ijZijzELIu8dggRfLLJNg">
+<div class="reveal-up reveal-delay-2 bg-[#141414] border border-[#C8A86B]/30 border-t-2 border-t-[#C8A86B] rounded-xl relative overflow-hidden p-6 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:border-[#C8A86B]/60">
+<img alt="Topographical obsidian texture" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none mix-blend-luminosity" src="/assets/images/obsidian-card-bg.webp" width="383" height="683" loading="lazy" decoding="async">
 <div class="relative z-10">
 <span class="text-[#C8A86B] text-[11px] uppercase tracking-widest font-semibold block mb-2">Floor Privacy</span>
 <div class="flex items-baseline gap-2">
@@ -272,9 +364,9 @@
 </div>
 </section>
 <!-- ==================== SECTION 3: THE RESIDENCES (ARCHITECTURAL MIDNIGHT ONYX & GOLD) ==================== -->
-<section class="py-24 lg:py-32 bg-onyx-surface text-alabaster relative border-b border-onyx-border" id="residences"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
+<section class="py-24 lg:py-32 bg-onyx-surface text-alabaster relative border-b border-onyx-border" id="residences"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16 pb-8 border-b border-white/10">
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-16 pb-8 border-b border-white/10 reveal-up">
 <div class="max-w-2xl space-y-4">
 <span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-trevita">Living Architecture</span>
 <h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-alabaster font-light leading-tight">Homes Built for Room, <span class="italic text-gold-light">Comfort, and Light.</span></h2>
@@ -291,8 +383,8 @@
 </div>
 </div>
 <!-- Featured Interior Showcase Photographic Plate with IMAGE_4 -->
-<div class="relative w-full h-[62vh] min-h-[480px] overflow-hidden border border-white/10 shadow-2xl mb-14 group">
-<img alt="Expansive living room opening to deep terrace with skyline views" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1KGsPIzAC674AkQUDgtAYmYCeHrQovJniWLW3hiQBZI4LIsCCoeuabIY_T2o9LvwAx5w9CI1AX5nzgRcKaCY8_3Zy6ZhMDZC-H0hZ11bu-gGcB_YydkZKhX1KOV6v97dVWriCjSKclwv81bA4Ar0i8QDORNVRVLKNhJQEsaSqtRMrJw3gemADxriL7dlE6k7aAHVrAIjB9inGUBA02sBhwf3HfwZ8og7ZOpeFcKWd">
+<div class="relative w-full h-[62vh] min-h-[480px] overflow-hidden border border-white/10 shadow-2xl mb-14 group reveal-scale">
+<img alt="Expansive living room opening to deep terrace with skyline views" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000" src="/assets/images/residences-living-terrace.webp" width="1376" height="768" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/95 via-onyx-deep/30 to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
 <div class="bg-onyx-deep/90 backdrop-blur-md p-6 max-w-xl border border-gold-trevita/30">
@@ -307,9 +399,9 @@
 </div>
 </div>
 <!-- Specification Pillars -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-y border-white/10 mb-14 text-center sm:text-left"><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Configurations</span><div class="font-cormorant text-3xl text-alabaster">3 &amp; 4 BHK</div><p class="text-xs text-alabaster/60 font-light">Luxury Apartments</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Apartment Sizes</span><div class="font-cormorant text-3xl text-alabaster">4,190 – 4,560 <span class="text-lg">Sq.Ft</span></div><p class="text-xs text-alabaster/60 font-light">Generous living sizes</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Balcony Span</span><div class="font-cormorant text-3xl text-alabaster">Up to 35 Ft</div><p class="text-xs text-alabaster/60 font-light">Deep outdoor balconies</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Ceiling Height</span><div class="font-cormorant text-3xl text-alabaster">3.2 Metres</div><p class="text-xs text-alabaster/60 font-light">Airy, spacious feel</p></div></div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-y border-white/10 mb-14 text-center sm:text-left reveal-up"><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Configurations</span><div class="font-cormorant text-3xl text-alabaster">3 &amp; 4 BHK</div><p class="text-xs text-alabaster/60 font-light">Luxury Apartments</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Apartment Sizes</span><div class="font-cormorant text-3xl text-alabaster">4,190 – 4,560 <span class="text-lg">Sq.Ft</span></div><p class="text-xs text-alabaster/60 font-light">Generous living sizes</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Balcony Span</span><div class="font-cormorant text-3xl text-alabaster">Up to 35 Ft</div><p class="text-xs text-alabaster/60 font-light">Deep outdoor balconies</p></div><div class="space-y-1"><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita">Ceiling Height</span><div class="font-cormorant text-3xl text-alabaster">3.2 Metres</div><p class="text-xs text-alabaster/60 font-light">Airy, spacious feel</p></div></div>
 <!-- Tab 1: 4 BHK Grande Sky Suite -->
-<div class="res-tab-pane grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch" id="tab-4bhk">
+<div class="res-tab-pane grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch reveal-up" id="tab-4bhk">
 <div class="lg:col-span-5 bg-onyx-deep p-8 sm:p-10 border border-gold-trevita/30 flex flex-col justify-between">
 <div class="space-y-4">
 <span class="text-[11px] font-semibold uppercase tracking-widest text-gold-light">Sky Suite Typology A</span>
@@ -379,13 +471,13 @@
 </div>
 </section>
 <!-- ==================== SECTION 4: LIFESTYLE AND AMENITIES (WARM STONE BEIGE WITH CRISP WHITE CARDS) ==================== -->
-<section class="py-24 lg:py-32 bg-[#F5F2EB] relative border-b border-stone-border" id="lifestyle"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 360px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<section class="py-24 lg:py-32 bg-[#F5F2EB] relative border-b border-stone-border" id="lifestyle"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 360px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="max-w-3xl mb-16 space-y-4"><div class="inline-flex items-center gap-2.5 text-gold-muted"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Curated Infrastructure</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-charcoal font-light leading-tight">Everyday Comforts and <span class="italic text-gold-muted">Exclusive Spaces.</span></h2><p class="font-sans text-charcoal-muted text-base font-light">Over 60,000 sq.ft. of indoor and outdoor facilities designed for recreation, fitness, and family gatherings.</p></div>
+<div class="max-w-3xl mb-16 space-y-4 reveal-up"><div class="inline-flex items-center gap-2.5 text-gold-muted"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Curated Infrastructure</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-charcoal font-light leading-tight">Everyday Comforts and <span class="italic text-gold-muted">Exclusive Spaces.</span></h2><p class="font-sans text-charcoal-muted text-base font-light">Over 60,000 sq.ft. of indoor and outdoor facilities designed for recreation, fitness, and family gatherings.</p></div>
 <!-- The Four Dedicated Amenity Zones -->
 <div class="space-y-12">
 <!-- Zone 1: Lobby Amenities — 30,000 sq. ft. -->
-<div class="bg-white border border-stone-border p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 300px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<div class="reveal-up bg-white border border-stone-border p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 300px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="lg:col-span-5 space-y-4">
 <span class="text-[10px] font-semibold uppercase tracking-widest-plus text-gold-muted">Zone 01 · Ground Level</span>
 <div class="font-cormorant text-3xl sm:text-4xl text-charcoal font-light">Lobby Amenities</div>
@@ -400,22 +492,22 @@
 </div>
 <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div class="relative h-64 overflow-hidden border border-stone-border group">
-<img alt="Executive co-working glass suites at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI57xFfdquFFpHLCP3OzFdu5qZMq5mU4QlW-M6kha42NjJ3D8nxHIFd8I6-O_dm0oMtPPxbKuPh9nJ21kiRHwsxBZgJJSS3haIcC2DIjACtzH0ULoapM9AJNj2fdPHqveiOzC3EryRKJJS5ZQnm3G48H1BmiZaWfvSwckY23jjUbDd-xwsdGG9TVRlCd8nO-w7Ya1WT2pKs5p4HkRPr8FsPxC3Bq61pik5vd_5vGaPPd4ZWXf1fVQsRw">
+<img alt="Executive co-working glass suites at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/amenity-coworking.webp" width="900" height="987" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/75 via-transparent to-transparent"></div>
 <span class="absolute bottom-3 left-3 text-xs text-alabaster font-cormorant italic">Executive Co-Working Suites</span>
 </div>
 <div class="relative h-64 overflow-hidden border border-stone-border group">
-<img alt="Grand sunlit residents lounge with wood paneling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChgIvZURsdkBquwoeeOdAWcCO0FnTIIgwJvJK32D02w_BuSDzW2vtMH5ntYeEgwv88KBeHNN0cnnrYj-tGQ65NXjae7uZm-tzDXLdAvDA8ZoMXcMrfXlTxe6pKQBP5xqyIJODK0KUDL0XEUSg7ogiLEHGRI52tjWbJ7C3TV7q_8_HI43K4UxFsV2rPcfa8INget3Sreb3WSUCpt5XM5mQ3bNe_ZnMpnoBxRBP3v3mN">
+<img alt="Grand sunlit residents lounge with wood paneling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/amenity-residents-lounge.webp" width="900" height="502" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/75 via-transparent to-transparent"></div>
 <span class="absolute bottom-3 left-3 text-xs text-alabaster font-cormorant italic">Grand Residents Lounge &amp; Library</span>
 </div>
 </div>
 </div>
 <!-- Zone 2: Club Trevita — 60,000 sq. ft. (Featuring IMAGE_5 and IMAGE_8) -->
-<div class="bg-white border border-stone-border p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 300px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<div class="reveal-up bg-white border border-stone-border p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 300px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="lg:col-span-7 order-2 lg:order-1">
 <div class="relative h-80 overflow-hidden border border-stone-border group">
-<img alt="Club Trevita Grand Facade and Entrance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuxwXx1dnkttok_X8alLTT7nnmNlLgM-_71_mefr7BVuUoZl-QFyJrD58IBS09C5MhCU7_6jogJHRuoGMcDwko0jJYMLqv5x7r8B03Tx4Ifk5G01VG4h6qM46XqYcr-RTp3DGr7hbTUsleUdzv6qRKF3bmlouxB9w2874BTv2fEClabkC4xfcTH98FS2O2kkd8LAVo4LB5K5ChzkerqJuK9tSGddm6OmjIN88DQ8scytAlMiDespl_Ag">
+<img alt="Club Trevita Grand Facade and Entrance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/club-trevita-facade.webp" width="1200" height="812" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/80 via-transparent to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end text-alabaster">
 <div>
@@ -442,7 +534,7 @@
 <!-- Zone 3 & 4: Skyline Deck & Covered Terrace Amenities -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <!-- Zone 3: Skyline Deck (66,000 sq. ft.) -->
-<div class="bg-onyx-deep text-alabaster p-8 sm:p-10 border border-gold-trevita/30 flex flex-col justify-between">
+<div class="reveal-up reveal-delay-1 bg-onyx-deep text-alabaster p-8 sm:p-10 border border-gold-trevita/30 flex flex-col justify-between">
 <div class="space-y-4">
 <span class="text-[10px] font-semibold uppercase tracking-widest-plus text-gold-trevita">Zone 03 · 140 Metres Above</span>
 <div class="font-cormorant text-3xl sm:text-4xl text-alabaster font-light">Skyline Deck</div>
@@ -457,7 +549,7 @@
 </div>
 </div>
 <!-- Zone 4: Covered Terrace Amenities (12,000 sq. ft.) -->
-<div class="bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 300px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<div class="reveal-up reveal-delay-2 bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 300px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="space-y-4">
 <span class="text-[10px] font-semibold uppercase tracking-widest-plus text-gold-muted">Zone 04 · Sheltered Sanctuaries</span>
 <div class="font-cormorant text-3xl sm:text-4xl text-charcoal font-light">Covered Terrace Amenities</div>
@@ -473,14 +565,14 @@
 </div>
 </section>
 <!-- ==================== SECTION 5: SKYLINE EXPERIENCE (DEEP NOIR ONYX & AMBIENT GOLD) ==================== -->
-<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative border-b border-onyx-border" id="skyline"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
+<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative border-b border-onyx-border" id="skyline"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="max-w-3xl mb-16 space-y-4"><div class="inline-flex items-center gap-2.5 text-gold-trevita"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-light">Level 25 Crown · 140 Metres</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-alabaster font-light leading-tight">Life Above the City.</h2><p class="font-sans text-alabaster/80 text-base font-light">Experience Hyderabad from the rooftop with open-air movie nights, sky gardens, and evening lounges.</p></div>
+<div class="max-w-3xl mb-16 space-y-4 reveal-up"><div class="inline-flex items-center gap-2.5 text-gold-trevita"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-light">Level 25 Crown · 140 Metres</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-alabaster font-light leading-tight">Life Above the City.</h2><p class="font-sans text-alabaster/80 text-base font-light">Experience Hyderabad from the rooftop with open-air movie nights, sky gardens, and evening lounges.</p></div>
 <!-- Featured Big Skyline Visuals Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 <!-- Outdoor Cinema Hero Card (IMAGE_15) -->
-<div class="lg:col-span-7 relative h-96 sm:h-[460px] overflow-hidden border border-gold-trevita/30 group shadow-2xl">
-<img alt="Outdoor Cinema with the sky above at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSxfyJDyN8BUViSFwVuw-NYxap_Ijxyx17JVKD3Z1Wq_ofHdgXQUAW7tOAvbeP72rkOLZwy-UJryB1i1OStBb_OdOvsD17o-7kuBvJjizwN44LsHUSnQHSWcrewDioXnitZQfB3gKhrbauMleq07bUeAHpcoszxZhnILnGaV1Hyw6qdrL9o9a9Q8j2xjtAOynuyu-KURGYEEe2HIt7LAR0aI1R6dMZB-7SXZ9Vehjg">
+<div class="lg:col-span-7 relative h-96 sm:h-[460px] overflow-hidden border border-gold-trevita/30 group shadow-2xl reveal-scale">
+<img alt="Outdoor Cinema with the sky above at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/skyline-outdoor-cinema.webp" width="1200" height="670" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-onyx-deep/30 to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6">
 <span class="text-[10px] font-semibold uppercase tracking-widest text-gold-light">The Allure of the Screen with the Sky Above</span>
@@ -489,10 +581,10 @@
 </div>
 </div>
 <!-- Terrace Bar & Cafe (IMAGE_17) + Stargazing Mound Stack (IMAGE_14) -->
-<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="lg:col-span-5 flex flex-col gap-6 reveal-up reveal-delay-2">
 <!-- Terrace Bar & Cafe -->
 <div class="relative h-56 sm:h-[218px] overflow-hidden border border-white/10 group shadow-xl">
-<img alt="Terrace Bar and Sunset Horizon Cafe at Trevita Skyline Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM0qtrWUIkl74DZkmEi0L7fkTbfDgH2jpBsGKyY4hRm_cLwaAr3Bqjbi9yGwwqMCktmEo8Xgk9x2NM7bn5vx1pjk-X4nefcCFA_ZhFxPwlkLfXLmrbjTEJiwz9d2iSgtmnOzFFn9DDfl3oeY6L0RY3KEsrCEFyxsrvK208TtAXf37rucGB76ny9_rM-XmFipIBb7lnxdptILBf6ZRcpJJ9cgw1j0V-hQ0Krr9EHpI_bzomOkOMXeIb8g">
+<img alt="Terrace Bar and Sunset Horizon Cafe at Trevita Skyline Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/skyline-terrace-bar.webp" width="1000" height="463" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/90 via-transparent to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Sunset Horizon</span>
@@ -501,50 +593,30 @@
 </div>
 <!-- Stargazing Observatory -->
 <div class="relative h-56 sm:h-[218px] overflow-hidden border border-white/10 group shadow-xl">
-<img alt="Stargazing telescopes and observatory on Skyline Jogging Loop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4A6TufknOsFBcN7woxuvDti1Xge6Mtar3QkTHip7nZC8XheFGcpDaLkBj9MrRp9IGiW7gvzxfEmwNN_l7BQiw0p-0wiw2GqTO0PkJD3FzR6A_Qm0F8e0PGxESsEjmCe8h3RI_bIJRNyHmYeT5hZ2IXcx4Qi-FwBgcIsMDEcx7Y1b5K7Q6Xekylol3RP3yQ3MTGdge2uZSBCbLhx3hcUeqRFigfcq3LTcvwKH42kGRKHSAT1FnM-iZyw">
+<img alt="Stargazing telescopes and observatory on Skyline Jogging Loop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/skyline-stargazing.webp" width="1000" height="479" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep/90 via-transparent to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4"><span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Celestial Observatory</span><div class="font-cormorant text-xl text-alabaster font-light">Sunset Lounge &amp; Stargazing Deck</div><p class="text-[11px] text-alabaster/70 font-light mt-0.5">Relax with quiet panoramic views over Botanical Garden and the HITEC City skyline.</p></div>
 </div>
 </div>
 </div>
-<!-- Skyline Deck Master Plan Layout & Legend Showcase -->
-<div class="bg-onyx-surface border border-gold-trevita/30 p-8 sm:p-12">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8">
-<div>
-<span class="text-[10px] font-semibold uppercase tracking-widest text-gold-light">Architectural Layout</span>
-<h3 class="font-cormorant text-3xl sm:text-4xl text-alabaster font-light">The Skyline Deck Master Plan</h3>
-</div>
-<p class="font-sans text-xs text-alabaster/70 max-w-md font-light leading-relaxed">
-              Spanning across the crowns of all three residential towers, linked seamlessly with glass sky-bridges.
-            </p>
-</div>
-<div class="relative overflow-hidden border border-white/10 bg-black/60 p-2">
-<img alt="The Skyline Deck Amenities Master Plan and Legend" class="w-full h-auto object-contain max-h-[600px] mx-auto filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiD2_lYZY3KMNrt5S0yjmY8Lb2Q1u-NWzRmHu7uAEP3hx_kvBWIPQisSEhGoptWB0vspC0VRuWTEp3YUOKvaEzJHOOzFvXt0o9qVbnAqChW0a9seeC77GnrejbOcNKg7RbizxkBvcbB2DFwOTJTQw6KUOi6g1hQ0W0OVWRnv1MLjBkytZwDU9DFVB9s6MnZH5szWAQgggBAtxNoEn8s8YaAt2yNXgDopBm4ddA41xa_OQx4yUfy0SVJg">
-</div>
-<!-- Feature Summary Badges -->
-<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mt-8 pt-8 border-t border-white/10 text-center"><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><span class="material-symbols-outlined text-gold-light text-xl mb-1">movie</span><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Cinema</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">Outdoor Cinema</p></div><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><div class="w-6 h-6 mb-1 flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida/ALJJyrBgTP3C7Tjc9lPzcn4z8oMSFiC8hr-_OUtJ4-CWO6fSm_QOqxWGemIL_rpL0Pe1I1cVZvVMp3OGRH5BC9lM7l-isfPkDNDL66h7WutjjKrLqHMczVor9YVvgK_cQoBuUZHeYI2mNBda-F71erwj8VK8yIhG7IilHWXkpiU2pu3L1vc-AcNkQMEYQrFXmbTDZ5QsC6nZet9xe6o4_JSRxW-Zva0Ddcea9Kck7WcXJMI9" alt="Telescope Icon" class="w-5 h-5 object-contain"></div><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Observatory</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">Stargazing Mound</p></div><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><span class="material-symbols-outlined text-gold-light text-xl mb-1">local_cafe</span><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Lounge</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">Terrace Bar &amp; Café</p></div><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><span class="material-symbols-outlined text-gold-light text-xl mb-1">wb_twilight</span><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Viewpoint</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">Sunset Lounge</p></div><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><span class="material-symbols-outlined text-gold-light text-xl mb-1">self_improvement</span><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Wellness</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">Yoga Deck</p></div><div class="p-2.5 bg-white/5 border border-white/10 hover:border-gold-trevita/40 transition-colors flex flex-col items-center justify-center min-h-[80px]"><span class="material-symbols-outlined text-gold-light text-xl mb-1">directions_run</span><span class="text-[9px] font-sans font-semibold tracking-widest text-gold-trevita uppercase">Fitness</span><p class="text-[10px] font-semibold uppercase tracking-wider text-alabaster mt-0.5 leading-tight text-center">140m Jogging Loop</p></div></div>
-</div>
 </div>
 </section>
 <!-- ==================== SECTION 6: SMARTER EVERYDAY LIVING (LIGHT LUXURY WARM STONE) ==================== -->
-<section class="py-24 lg:py-32 bg-[#FAFAF8] relative border-b border-stone-border" id="living"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 360px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<section class="py-24 lg:py-32 bg-[#FAFAF8] relative border-b border-stone-border" id="living"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 360px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="max-w-3xl mb-16 space-y-4"><div class="inline-flex items-center gap-2.5 text-gold-muted"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Exclusive Resident Services</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-charcoal font-light leading-tight">Smart Features for <span class="italic text-gold-muted">Effortless Living.</span></h2><p class="font-sans text-charcoal-muted text-base font-light">Modern security and automated logistics built right into your daily routine.</p></div>
+<div class="max-w-3xl mb-16 space-y-4 reveal-up"><div class="inline-flex items-center gap-2.5 text-gold-muted"><span class="w-8 h-px bg-gold-trevita"></span><span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Exclusive Resident Services</span></div><h2 class="font-cormorant text-4xl sm:text-5xl lg:text-6xl text-charcoal font-light leading-tight">Smart Features for <span class="italic text-gold-muted">Effortless Living.</span></h2><p class="font-sans text-charcoal-muted text-base font-light">Modern security and automated logistics built right into your daily routine.</p></div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <!-- Service 1: AURM Secure Locker Facility (IMAGE_10 & IMAGE_24) -->
-<div class="bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 300px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<div class="reveal-up reveal-delay-1 bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 300px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="space-y-6">
 <div class="flex items-center justify-between border-b border-stone-border pb-4">
 <div>
 <span class="text-[10px] font-semibold uppercase tracking-widest-plus text-gold-muted">Safe Space Technology</span>
 <h3 class="font-cormorant text-3xl text-charcoal font-light">AURM — Secure Locker Facility</h3>
 </div>
-<div class="px-2.5 py-1 bg-stone-champagne/50 border border-stone-border text-[10px] font-bold uppercase tracking-wider text-charcoal">
-                  ISO 9001 &amp; 27001
-                </div>
 </div>
 <div class="relative h-64 overflow-hidden border border-stone-border group">
-<img alt="AURM — A Safe Space Secure Locker Facility at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQYx3fsPbXQ8MQGiPxEM9xTcBgFzAVKvOjiP3j6ARWZxKwqVlS3gNOiqtNnlXS5MxmI65MqcNd-DMikyYjGpMXxHIXePwA5du4LLnRt93qlip3Y8cx62CFqhSKnqJXoTGviaU2WPaOFmvhB8U4JJY6v0US3UZdKMLaSYPCRXw8rSbIyPOK1jVfft6n-9OptfVT6z7YcMrwlXbl-S2xkyB70kPoxZeua9M4KA5zf9fqHiIpvjOkV_3KZw">
+<img alt="AURM — A Safe Space Secure Locker Facility at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/smart-aurm-lockers.webp" width="960" height="778" loading="lazy" decoding="async">
 </div>
 <p class="font-sans text-sm text-charcoal-muted font-light leading-relaxed">AURM Automated Bank-Grade Lockers: A secure 24/7 automated locker facility inside your building, backed by biometric access and ₹1 Crore complimentary insurance coverage.</p>
 <div class="space-y-3 pt-2">
@@ -577,7 +649,7 @@
 </div>
 </div>
 <!-- Service 2: Smart Parcel Way (IMAGE_23) -->
-<div class="bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 300px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<div class="reveal-up reveal-delay-2 bg-white border border-stone-border p-8 sm:p-10 flex flex-col justify-between shadow-sm relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply rounded-sm" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 300px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="space-y-6">
 <div class="flex items-center justify-between border-b border-stone-border pb-4">
 <div>
@@ -589,7 +661,7 @@
                 </div>
 </div>
 <div class="relative h-64 overflow-hidden border border-stone-border group">
-<img alt="Smart Parcel Way Automated Vertical Transport at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9QRUPdm0_PbJj4p3fRiXp5v0a-Xz-dwIyoPRGXjpnNt9uxSha7GTU7p7S6wObGYjI7VZWBLo2yh6wJbZymAu0CZvStTCfdSN1otl7LmxfgPdbedvbhfKQT-AQq8eiJllR_qa6ldMtxJnKveT-fV3oj_I3t_yJhn3Xj-geN2y-laxMwESOaz1vRyXbfs5CHT_PmGJBCj0s4RZkNW3RN850onuMcXIhu9j7JIeil2mfQDrYpxu6nKuww">
+<img alt="Smart Parcel Way Automated Vertical Transport at Trevita" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/smart-parcel-way.webp" width="960" height="777" loading="lazy" decoding="async">
 </div>
 <p class="font-sans text-sm text-charcoal-muted font-light leading-relaxed">Automated Parcel Delivery System: Smart contactless delivery vaults and internal automated parcel transport to securely store your packages.</p>
 <div class="space-y-3 pt-2">
@@ -625,9 +697,9 @@
 </div>
 </section>
 <!-- ==================== SECTION 7: LOCATION AND CONNECTIVITY (WARM ALABASTER) ==================== -->
-<section class="py-24 lg:py-32 bg-[#F7F5F0] relative border-b border-stone-border" id="location"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAs7qXrK81tgXHOyogZ4oeywK4udb46OuYBn9_zHX7hjHJz8XjSmPDBYOJxJUXIMUYZW-Awvsb-JmS3JlhjTmQSD7eoute2UKZN7H_H__zikU-ql54_aNJ6BsRD5-Q6oZK47lnAHDbOjaARtQoGab6xUUhoL9Hc0Cf0rwfIySxuDH6G1jgfduvhhNHxmHTAuRbauleS_9kLC2wA4ESXfT8CJJ02C0l7_du1IfYhL0hxY9fEsUartNwMFg&quot;); background-size: 360px auto; background-repeat: repeat;" data-stitch-orig-opacity="0.22"></div>
+<section class="py-24 lg:py-32 bg-[#F7F5F0] relative border-b border-stone-border" id="location"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-multiply overflow-hidden" style="background-image: url(&quot;/assets/images/stone-grain-bg.webp&quot;); background-size: 360px auto; background-repeat: repeat; opacity: 0.12;" data-stitch-orig-opacity="0.22"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="max-w-3xl mb-16 space-y-4">
+<div class="max-w-3xl mb-16 space-y-4 reveal-up">
 <div class="inline-flex items-center gap-2.5 text-gold-muted">
 <span class="w-8 h-px bg-gold-trevita"></span>
 <span class="text-[11px] font-semibold uppercase tracking-widest-plus text-gold-muted">Prime Connectivity</span>
@@ -642,9 +714,9 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 <!-- Map of Convenience Image Card (IMAGE_21) -->
-<div class="lg:col-span-7 bg-white border border-stone-border p-4 sm:p-6 shadow-sm">
+<div class="lg:col-span-7 bg-white border border-stone-border p-4 sm:p-6 shadow-sm reveal-scale">
 <div class="relative overflow-hidden border border-stone-border bg-[#F5F2EB]/30">
-<img alt="The Map of Convenience - Kondapur, HITEC City, Botanical Garden Connectivity Map" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Qb1XPSP_4l5SC6w9GVm6zVzk9teeE23O-DCJtNG8S7DNByd2jf09kNZ70DSP-n3SI10JCVDAKYZQiiLWzDt8LpWkgh2Brzz8FYtVT9Esl2GqtWGAJYIe84un24GFbfXcrjTAWvBf8ttKoB01KRXTr7pTjIph2LQfZ-LPeAa_NBaUGsQk5hxZNR0UnRM84S64jAkRKqTowXgQ3-zlZmI8ZiVYN0c8ldz4wxZe4xKaBJ31tByFy0DbZQ">
+<img alt="The Map of Convenience - Kondapur, HITEC City, Botanical Garden Connectivity Map" class="w-full h-auto object-contain" src="/assets/images/location-convenience-map.webp" width="1200" height="974" loading="lazy" decoding="async">
 </div>
 <div class="mt-4 flex flex-wrap items-center justify-between gap-2 text-[11px] text-charcoal-muted uppercase tracking-wider">
 <span>*Travel times are approximate and subject to traffic</span>
@@ -654,7 +726,7 @@
 <!-- Organized Travel Time Indices -->
 <div class="lg:col-span-5 space-y-5">
 <!-- Nature & Greenery -->
-<div class="bg-white p-6 border border-stone-border shadow-sm">
+<div class="reveal-up reveal-delay-1 bg-white p-6 border border-stone-border shadow-sm">
 <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-muted mb-3">
 <span class="material-symbols-outlined text-lg text-gold-trevita">park</span>
 <span>Nature &amp; Outdoor Sanctuaries</span>
@@ -675,7 +747,7 @@
 </ul>
 </div>
 <!-- Work & Tech Parks -->
-<div class="bg-white p-6 border border-stone-border shadow-sm">
+<div class="reveal-up reveal-delay-2 bg-white p-6 border border-stone-border shadow-sm">
 <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-muted mb-3">
 <span class="material-symbols-outlined text-lg text-gold-trevita">business_center</span>
 <span>Commercial &amp; Tech Corridors</span>
@@ -700,7 +772,7 @@
 </ul>
 </div>
 <!-- Retail & Lifestyle -->
-<div class="bg-white p-6 border border-stone-border shadow-sm">
+<div class="reveal-up reveal-delay-3 bg-white p-6 border border-stone-border shadow-sm">
 <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-muted mb-3">
 <span class="material-symbols-outlined text-lg text-gold-trevita">local_mall</span>
 <span>Retail &amp; Leisure</span>
@@ -721,7 +793,7 @@
 </ul>
 </div>
 <!-- Education & Healthcare -->
-<div class="bg-white p-6 border border-stone-border shadow-sm">
+<div class="reveal-up reveal-delay-4 bg-white p-6 border border-stone-border shadow-sm">
 <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gold-muted mb-3">
 <span class="material-symbols-outlined text-lg text-gold-trevita">medical_services</span>
 <span>Healthcare &amp; International Schools</span>
@@ -746,9 +818,9 @@
 </div>
 </section>
 <!-- ==================== SECTION 8: GALLERY (DEEP ARCHITECTURAL NOIR) ==================== -->
-<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative border-b border-onyx-border" id="gallery"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
+<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative border-b border-onyx-border" id="gallery"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 reveal-up">
 <div>
 <div class="inline-flex items-center gap-2 text-gold-trevita">
 <span class="w-8 h-px bg-gold-trevita"></span>
@@ -771,8 +843,8 @@
 <!-- Filterable Mosaic Grid of Official Renders -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
 <!-- Item 1: Architecture (IMAGE_27) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="architecture">
-<img alt="Trevita 3 magnificent towers across lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkYCOze5cSXHHWi3dwGu9z7P4chTq3eENSJwhqmBD26Xgjv5WlKcPft50lsweqfZG2ERWEn8qoAZu9A8A3plMbcpB29obLF5JsltsQF3NjfzWbV1HZCWrZJftRcZkUlPQoYcrg1CZjZq2skJrhqIUP--8yrU_WTBAQ1ijVKFWrUtLeLzmznreErEvtBvllvTG4QEEduusu4SSXBi6lEYTo38MQ-l7qH6I-zRmixxbe">
+<div class="gallery-item reveal-up reveal-delay-1 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="architecture">
+<img alt="Trevita 3 magnificent towers across lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/hero-towers.webp" width="1376" height="768" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Architecture</span>
@@ -780,8 +852,8 @@
 </div>
 </div>
 <!-- Item 2: Residences (IMAGE_4) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="residences">
-<img alt="Trevita Sky Living Room with Panoramic Terrace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1KGsPIzAC674AkQUDgtAYmYCeHrQovJniWLW3hiQBZI4LIsCCoeuabIY_T2o9LvwAx5w9CI1AX5nzgRcKaCY8_3Zy6ZhMDZC-H0hZ11bu-gGcB_YydkZKhX1KOV6v97dVWriCjSKclwv81bA4Ar0i8QDORNVRVLKNhJQEsaSqtRMrJw3gemADxriL7dlE6k7aAHVrAIjB9inGUBA02sBhwf3HfwZ8og7ZOpeFcKWd">
+<div class="gallery-item reveal-up reveal-delay-2 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="residences">
+<img alt="Trevita Sky Living Room with Panoramic Terrace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/residences-living-terrace.webp" width="1376" height="768" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Residences</span>
@@ -789,8 +861,8 @@
 </div>
 </div>
 <!-- Item 3: Club Trevita (IMAGE_8) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="club">
-<img alt="Club Trevita Swimming Pool with Living Wall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgPIab1prtPSR6bnasbOniGMQmWxE7UDlnoLclk85dpLuvyTdN6UEF4aPBoVGgJTJcbBsXRjitppV1Ah97uo-HDAA-GBmeub-3dcKIymjzG-m9O1hoP6MsjGyd7AfhHl0dU9j4l6SDGWAUO-cIpjArCZqT1B01klPI_ByhnxObXof3CC-ez8ehO34O3vpI1kLBzic8IpgM9jePh0OMOWI_Ejyv6ZTwwws21UePtsVh2f04cE4JeNE2gg">
+<div class="gallery-item reveal-up reveal-delay-3 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="club">
+<img alt="Club Trevita Swimming Pool with Living Wall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/gallery-aqua-pool.webp" width="1000" height="472" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Club Trevita</span>
@@ -798,8 +870,8 @@
 </div>
 </div>
 <!-- Item 4: Skyline Deck (IMAGE_15) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="skyline">
-<img alt="Trevita Outdoor Cinema on Sky Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSxfyJDyN8BUViSFwVuw-NYxap_Ijxyx17JVKD3Z1Wq_ofHdgXQUAW7tOAvbeP72rkOLZwy-UJryB1i1OStBb_OdOvsD17o-7kuBvJjizwN44LsHUSnQHSWcrewDioXnitZQfB3gKhrbauMleq07bUeAHpcoszxZhnILnGaV1Hyw6qdrL9o9a9Q8j2xjtAOynuyu-KURGYEEe2HIt7LAR0aI1R6dMZB-7SXZ9Vehjg">
+<div class="gallery-item reveal-up reveal-delay-1 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="skyline">
+<img alt="Trevita Outdoor Cinema on Sky Deck" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/skyline-outdoor-cinema.webp" width="1200" height="670" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Skyline Deck</span>
@@ -807,8 +879,8 @@
 </div>
 </div>
 <!-- Item 5: Skyline Deck (IMAGE_17) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="skyline">
-<img alt="Terrace Bar &amp; Sunset Horizon Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM0qtrWUIkl74DZkmEi0L7fkTbfDgH2jpBsGKyY4hRm_cLwaAr3Bqjbi9yGwwqMCktmEo8Xgk9x2NM7bn5vx1pjk-X4nefcCFA_ZhFxPwlkLfXLmrbjTEJiwz9d2iSgtmnOzFFn9DDfl3oeY6L0RY3KEsrCEFyxsrvK208TtAXf37rucGB76ny9_rM-XmFipIBb7lnxdptILBf6ZRcpJJ9cgw1j0V-hQ0Krr9EHpI_bzomOkOMXeIb8g">
+<div class="gallery-item reveal-up reveal-delay-2 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="skyline">
+<img alt="Terrace Bar &amp; Sunset Horizon Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/skyline-terrace-bar.webp" width="1000" height="463" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Skyline Deck</span>
@@ -816,10 +888,10 @@
 </div>
 </div>
 <!-- Item 6: Skyline Deck (IMAGE_14) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="architecture"><img alt="Trevita Monumental Grand Arrival Lounge and Lobby" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChgIvZURsdkBquwoeeOdAWcCO0FnTIIgwJvJK32D02w_BuSDzW2vtMH5ntYeEgwv88KBeHNN0cnnrYj-tGQ65NXjae7uZm-tzDXLdAvDA8ZoMXcMrfXlTxe6pKQBP5xqyIJODK0KUDL0XEUSg7ogiLEHGRI52tjWbJ7C3TV7q_8_HI43K4UxFsV2rPcfa8INget3Sreb3WSUCpt5XM5mQ3bNe_ZnMpnoBxRBP3v3mN"><div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Architecture</span><p class="font-cormorant text-xl">Monumental Grand Arrival Lobby</p></div></div>
+<div class="gallery-item reveal-up reveal-delay-3 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="architecture"><img alt="Trevita Monumental Grand Arrival Lounge and Lobby" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/amenity-residents-lounge.webp" width="900" height="502" loading="lazy" decoding="async"><div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div><div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Architecture</span><p class="font-cormorant text-xl">Monumental Grand Arrival Lobby</p></div></div>
 <!-- Item 7: Club Trevita Facade (IMAGE_5) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="club">
-<img alt="Club Trevita exterior facade with gold jali screen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuxwXx1dnkttok_X8alLTT7nnmNlLgM-_71_mefr7BVuUoZl-QFyJrD58IBS09C5MhCU7_6jogJHRuoGMcDwko0jJYMLqv5x7r8B03Tx4Ifk5G01VG4h6qM46XqYcr-RTp3DGr7hbTUsleUdzv6qRKF3bmlouxB9w2874BTv2fEClabkC4xfcTH98FS2O2kkd8LAVo4LB5K5ChzkerqJuK9tSGddm6OmjIN88DQ8scytAlMiDespl_Ag">
+<div class="gallery-item reveal-up reveal-delay-1 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="club">
+<img alt="Club Trevita exterior facade with gold jali screen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/club-trevita-facade.webp" width="1200" height="812" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Club Trevita</span>
@@ -827,8 +899,8 @@
 </div>
 </div>
 <!-- Item 8: Landscape (IMAGE_3) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="landscape">
-<img alt="Lakeside promenade sunrise walk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzzs9dxhf-SSk2ey93RF8RurpwlYAC26gfbLKVHWa1O_5YZfk405oGeL-mWl3X0zacmGRf1vxtL5IzYCP-mq-F2TjWS1HIvEeevj9i6MhfLODi3coUf0aMi_2muZkY0G4h59ir5NFTZVbP2i9iYgQ8shJEPA_H44XH8vRQvpNvUqlARhHwbGJP0CKO5FDbWzj98leFC7balMkiG0j19cpdBVJSmnROlHWx1YP4kBZ6kYQPhtcZJ4qFxg">
+<div class="gallery-item reveal-up reveal-delay-2 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="landscape">
+<img alt="Lakeside promenade sunrise walk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/gallery-lakefront-promenade.webp" width="1000" height="464" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Landscape</span>
@@ -836,8 +908,8 @@
 </div>
 </div>
 <!-- Item 9: Landscape (Boulevard) -->
-<div class="gallery-item group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="landscape">
-<img alt="Lush internal boulevard with evening lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdrdiZpsD5b3G_rUSzQ7Gzbq2WGWjPZoWbpAA-wZ-wrFF0ZqstUkjAF4wmK-2KyK3BPCJTdyy96Yr8Uo-mBh-xanpomtqNpYgc_UiZ-qBPlhee0_qRQ66GtNSDIJVm5w_8vWX-1shIB3eYqrd_8JQcRCB7lCFrRE4y2ihYBiwBBvcTHuvGwkvae4P5Z6dhyqH3ogDLxn97pRYlh6wQZA6afxVsBD288t5yzNLtv1WpxaKgCNgBng1vDQ">
+<div class="gallery-item reveal-up reveal-delay-3 group relative h-72 overflow-hidden border border-white/10 bg-onyx-surface shadow-md" data-category="landscape">
+<img alt="Lush internal boulevard with evening lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/images/gallery-pedestrian-boulevard.webp" width="1000" height="418" loading="lazy" decoding="async">
 <div class="absolute inset-0 bg-gradient-to-t from-onyx-deep via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 <div class="absolute bottom-4 left-4 right-4 text-alabaster opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="text-[10px] uppercase tracking-widest text-gold-light font-semibold">Landscape</span>
@@ -848,11 +920,11 @@
 </div>
 </section>
 <!-- ==================== SECTION 9: FINAL ENQUIRY & FOOTER (ARCHITECTURAL ONYX & GOLD RIM) ==================== -->
-<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative" id="enquiry"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
+<section class="py-24 lg:py-32 bg-onyx-deep text-alabaster relative" id="enquiry"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 <!-- Left Column: Provenance & Details -->
-<div class="lg:col-span-5 space-y-8">
+<div class="lg:col-span-5 space-y-8 reveal-up">
 <div class="space-y-4">
 <div class="inline-flex items-center gap-2.5 text-gold-trevita">
 <span class="w-8 h-px bg-gold-trevita"></span>
@@ -868,82 +940,79 @@
 <!-- Credentials Block -->
 <div class="space-y-4 pt-4 border-t border-white/10">
 <div class="flex items-center gap-4">
-<img alt="Cybercity 20 Years Better Than Ever" class="h-16 w-16 object-contain bg-white/5 p-1 border border-gold-trevita/30 rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfJNBLynHPRJVxBMpYUm27xql-lm2ihTx1OitjNzcoKl0spLjVwGcNNI6EEYQUDbf-gS_YWoZt7Wh-OH8bBXvutOZrG2EH4DvWgeqQJMEcVb_3q9mlfVUyODyWB24sI0ncWP73b1j_j0pdRGHm8HmU_g-Zd-iAkVbrel6E7crJxByQ0_PFuoL0OUv-lH60lTsbAx4AOBuZNPzJP5Lp8f0Mfipjxm_ewiH9TBSj5Kjb0GdYriu3lKUkoQ">
+<img alt="Cybercity 20 Years Better Than Ever" class="h-16 w-16 object-contain bg-white/5 p-1 border border-gold-trevita/30 rounded-sm" src="/assets/images/cybercity-20yrs-badge.webp" width="200" height="197" loading="lazy" decoding="async">
 <div>
 <span class="text-xs uppercase font-semibold tracking-wider text-gold-light block">Cybercity Provenance</span>
 <span class="font-cormorant text-lg text-alabaster">20 Years of Structural Excellence</span>
 <p class="text-xs text-alabaster/60 font-light">Over 15 Million Sq.Ft delivered across Hyderabad.</p>
 </div>
-</div><div class="flex items-center gap-4 pt-2"><div class="h-14 w-14 rounded-sm overflow-hidden flex items-center justify-center bg-white p-1 border border-gold-trevita/40 shadow-sm"><img alt="KONU Exclusive Marketing Partner" class="w-full h-full object-contain filter contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEh4MtnX1JOzyme9op-fg0HOEuMBRyoUmbY36HJM8uThrOBFQq8oKLGNQ9dLi1SYh1BaxvwgUy7m9P8LB0KVcWXhj5GGoLA4f6s--hAmoci-BOdIZMNHmyhsbx4rGKx9AzQ2RTAZCB9kPeUfudPZdDBcCgQXEnbFamkN1UHTOv2i0zHb1J3ZPbyZZlVcgbx9eNEA-q2Nh-jLB54eVs1kuSAuviKXDoQ0bQN4oAwSkt8XTSRyr_t1FMeA"></div><div><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita block">Exclusive Marketing Partner</span><span class="font-cormorant text-lg text-alabaster">KONU Real Estate Advisory</span><p class="text-xs text-alabaster/60 font-light">Authorized channel partner &amp; strategic marketing.</p></div></div>
+</div><div class="flex items-center gap-4 pt-2"><div class="h-14 w-14 rounded-sm overflow-hidden flex items-center justify-center bg-white p-1 border border-gold-trevita/40 shadow-sm"><img alt="KONU Exclusive Marketing Partner" class="w-full h-full object-contain filter contrast-105" src="/assets/images/konu-advisory-logo.webp" width="200" height="200" loading="lazy" decoding="async"></div><div><span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita block">Exclusive Marketing Partner</span><span class="font-cormorant text-lg text-alabaster">KONU Real Estate Advisory</span><p class="text-xs text-alabaster/60 font-light">Authorized channel partner &amp; strategic marketing.</p></div></div>
 <div class="p-4 bg-onyx-surface border border-white/10 space-y-1">
 <span class="text-[10px] uppercase font-semibold tracking-widest text-gold-trevita block">Telangana RERA Registration</span>
 <div class="font-cormorant text-2xl text-alabaster">P02400007892</div>
 <p class="text-[11px] text-alabaster/60 font-light">Fully approved under Telangana State Real Estate Regulatory Authority.</p>
 </div>
-<div class="space-y-1">
-<span class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block">Official Sales Contact</span>
-<a class="font-cormorant text-2xl text-alabaster hover:text-gold-light transition-colors block" href="tel:+914068209000">
-                  +91 40 6820 9000
-                </a>
-<a class="text-xs text-alabaster/70 hover:text-gold-light transition-colors block" href="mailto:sales@cybercity.in">
-                  sales@cybercity.in
-                </a>
 </div>
 </div>
+<!-- Right Column: Black & Warm Beige Consultation Form -->
+<div class="lg:col-span-7 reveal-up reveal-delay-2 bg-[#F4F1EA] text-charcoal p-8 sm:p-12 border border-stone-border shadow-2xl relative">
+<div class="absolute top-0 left-0 right-0 h-1 bg-onyx"></div>
+<h3 class="font-cormorant text-3xl sm:text-4xl text-onyx font-normal mb-2">Book a Site Visit</h3>
+<p class="text-xs text-charcoal-muted font-normal mb-8">Enter your details to schedule your visit.</p>
+<div class="mb-6 flex flex-wrap items-center justify-between gap-2 w-full px-4 py-3 bg-[#E8E2D5] border border-onyx/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-onyx text-base">sell</span>
+<span class="text-[11px] uppercase tracking-wider text-onyx font-semibold">Inaugural Pricing</span>
 </div>
-<!-- Right Column: Gold-Rimmed Consultation Form -->
-<div class="lg:col-span-7 bg-onyx-surface p-8 sm:p-12 border border-gold-trevita/40 shadow-2xl relative">
-<div class="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-gold-trevita to-transparent"></div>
-<h3 class="font-cormorant text-3xl text-alabaster font-light mb-2">Schedule a Private Site Visit</h3>
-<p class="text-xs text-alabaster/70 font-light mb-8">Please share your details for a dedicated walkthrough with our residential advisory team.</p><div class="mb-6 inline-flex items-center justify-between w-full p-3 bg-onyx-deep border border-gold-trevita/30 rounded-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold-trevita text-base">sell</span><span class="text-[11px] uppercase tracking-wider text-alabaster/80 font-medium">Special Inaugural Pricing</span></div><span class="font-cormorant text-xl text-gold-light font-normal tracking-wide">Base Price: ₹10,499 / sft*</span></div>
+<span class="font-cormorant text-xl text-onyx font-semibold tracking-wide">Base Price: ₹10,499 / sft*</span>
+</div>
 <form class="space-y-6" id="preview-form" onsubmit="handleFormSubmit(event)">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="fullName">Full Name *</label>
-<input class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster placeholder-alabaster/30 focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="fullName" placeholder="Lord / Dr. / Mr. / Ms." required="" type="text">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="fullName">Name *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="fullName" placeholder="Your name" required="" type="text">
 </div>
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="phoneNumber">Phone Number *</label>
-<input class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster placeholder-alabaster/30 focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="phoneNumber" pattern="[0-9+ -]{10,15}" placeholder="+91 98000 00000" required="" type="tel">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="phoneNumber">Phone *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="phoneNumber" pattern="[0-9+ -]{10,15}" placeholder="+91 98000 00000" required="" type="tel">
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="emailAddress">Email Address *</label>
-<input class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster placeholder-alabaster/30 focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="emailAddress" placeholder="executive@enterprise.com" required="" type="email">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="emailAddress">Email *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="emailAddress" placeholder="you@example.com" required="" type="email">
 </div>
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="configuration">Preferred Configuration</label>
-<select class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="configuration">
-<option class="bg-onyx-deep text-alabaster" value="4bhk">4 BHK Grande Sky Suite (4,250 – 4,560 Sq.Ft)</option>
-<option class="bg-onyx-deep text-alabaster" value="3.5bhk">3.5 BHK Imperial Residence</option>
-<option class="bg-onyx-deep text-alabaster" value="3bhk">3 BHK Sanctuary Suite (2,790 – 3,250 Sq.Ft)</option>
-<option class="bg-onyx-deep text-alabaster" value="penthouse">Penthouse Crown (On Request)</option>
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="configuration">Configuration</label>
+<select class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="configuration">
+<option class="bg-[#FAFAF7] text-onyx" value="4bhk">4 BHK (4,250 – 4,560 Sq.Ft)</option>
+<option class="bg-[#FAFAF7] text-onyx" value="3.5bhk">3.5 BHK</option>
+<option class="bg-[#FAFAF7] text-onyx" value="3bhk">3 BHK (2,790 – 3,250 Sq.Ft)</option>
+<option class="bg-[#FAFAF7] text-onyx" value="penthouse">Penthouse</option>
 </select>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="preferredDate">Preferred Visit Date</label>
-<input class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="preferredDate" type="date">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="preferredDate">Visit Date</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="preferredDate" type="date">
 </div>
 <div class="space-y-1.5">
-<label class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block" for="preferredTime">Preferred Time Window</label>
-<select class="w-full bg-onyx-deep border border-white/15 px-4 py-3 text-sm text-alabaster focus:border-gold-trevita focus:ring-0 focus:outline-none transition-colors" id="preferredTime">
-<option class="bg-onyx-deep text-alabaster" value="morning">Morning (10:00 AM – 01:00 PM)</option>
-<option class="bg-onyx-deep text-alabaster" value="afternoon">Afternoon (01:00 PM – 04:00 PM)</option>
-<option class="bg-onyx-deep text-alabaster" value="twilight">Twilight Viewing (04:00 PM – 07:00 PM)</option>
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="preferredTime">Site Visit Time</label>
+<select class="w-full bg-[#FAFAF7] border border-onyx/25 px-4 py-3 text-sm text-onyx focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="preferredTime">
+<option class="bg-[#FAFAF7] text-onyx" value="10am-1pm">10:00 AM – 1:00 PM</option>
+<option class="bg-[#FAFAF7] text-onyx" value="2pm-5pm">2:00 PM – 5:00 PM</option>
 </select>
 </div>
 </div>
 <div class="pt-2">
-<button class="w-full py-4 bg-gold-trevita text-onyx text-xs font-bold uppercase tracking-widest hover:bg-gold-light hover:text-charcoal transition-all duration-300 shadow-xl shadow-gold-trevita/10 border border-gold-trevita" type="submit">
-                  Submit Enquiry &amp; Schedule Visit
+<button class="w-full py-4 bg-onyx text-[#FAFAF7] text-xs font-bold uppercase tracking-widest hover:bg-charcoal transition-all duration-300 shadow-lg border border-onyx" type="submit">
+                  Book a Site Visit
                 </button>
 </div>
-<div class="hidden p-4 bg-white/5 border border-gold-trevita text-center transition-all" id="form-alert">
-<span class="text-xs uppercase font-semibold tracking-widest text-gold-light block">Enquiry Received</span>
-<p class="text-xs text-alabaster/90 mt-1 font-light">Thank you. Our Private Client Director will contact you within two business hours.</p>
+<div class="hidden p-4 bg-[#E8E2D5] border border-onyx text-center transition-all" id="form-alert">
+<span class="text-xs uppercase font-semibold tracking-widest text-onyx block">Request Received</span>
+<p class="text-xs text-charcoal-muted mt-1 font-normal">Thank you. Our team will contact you shortly.</p>
 </div>
 </form>
 </div>
@@ -952,13 +1021,13 @@
 </section>
 </main>
 <!-- REFINED ARCHITECTURAL FOOTER (ONYX & GOLD) -->
-<footer class="bg-onyx-deep text-alabaster border-t border-white/10 py-16 relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAHTS4rcr7IjYiTNckVOIwUkJZ9ujsR2x15NPNgeExcuOI5BQCC3U_DeC6lOUkrnALFE4_nc7ZRV2n8pq3W8d_zRGilNqeQRzDvuZLEJMPrLoqXY_PCX1j8nxOBWnrWcExNcHuEjSitKjibFicguxk1k2Jwiw1uN5vNKeJ0SmkaOya8oshEH4mAB-6SYkIR74v3QwnIbtWrmHUwb20hs_4SGkTN41zI7WpMyondnZSES__JiKGVGHRnpQ&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
+<footer class="bg-onyx-deep text-alabaster border-t border-white/10 py-16 relative overflow-hidden"><div class="absolute inset-0 z-0 pointer-events-none mix-blend-luminosity" style="background-image: url(&quot;/assets/images/obsidian-grain-bg.webp&quot;); background-size: cover; background-position: center center; background-repeat: repeat; opacity: 0.2;"></div>
 <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/10 reveal-up">
 <div class="md:col-span-5 space-y-4">
 <div class="flex items-center gap-3">
 <div class="w-8 h-8 rounded-sm overflow-hidden flex items-center justify-center border border-gold-trevita/40 bg-onyx-surface p-0.5">
-<img alt="TREVITA Emblem" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJCPp4z2nE87LfqQO9OpmiVk6m9x6DFchvRlEvEb6F5KIYkb9maSXhgLvVb4Mss0m7IhJXIPq3dp_XCzOrhdt2v7TywIUDGFGY7zhZLpT4NC4bQ2t16gBwNWtC15XUirEKCtXo7OC16xJPYd-gMEexH_6Do_w9BiDTOiJPiq8r64z_DfZRHUTkIJSnbQjO9mrG1zZRjJImbG2mrIbBKD32hoyng7vHS2mGxECs4aokM3vf_eLIrAih_w">
+<img alt="TREVITA Emblem" class="w-full h-full object-contain" src="/assets/images/trevita-emblem.webp" width="160" height="147" loading="lazy" decoding="async">
 </div>
 <span class="font-cormorant text-2xl tracking-widest uppercase text-alabaster">TREVITA</span>
 </div>
@@ -967,7 +1036,7 @@
           </p>
 <div class="pt-2 text-xs text-gold-trevita uppercase tracking-wider font-semibold">
             Cybercity Builders &amp; Developers · 20 Years Better Than Ever
-          </div><div class="pt-4 mt-2 border-t border-white/10 flex items-center gap-3.5"><div class="w-10 h-10 rounded-sm overflow-hidden flex items-center justify-center bg-white p-1 border border-gold-trevita/30"><img alt="KONU Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMqTxV0XDHbpuB9PaGexIcRFsrUOVNeIIqFedvjiCYT2WzsjQKgOIKBCwONNmj5Yyt2gEWcl4r9lunktznz9eYXlWy3o2uttyEXNtD09Ceof5Xn32lX7lAlpHsnLay5SFqmVYoD7nJDcXxLbRm1NJm_08d1Sl8cV2jNyZCfUiz_SR4j4P2Re1GSvHRmH3emrT8JO12f-PQ9EtO6GOBs7pJE5xgpnrAsKlR41p80WMFKSzb4oRrag8ikA"></div><div class="flex flex-col"><span class="text-[9px] uppercase font-semibold tracking-widest text-gold-light">Exclusive Marketing Partner</span><span class="font-cormorant text-base text-alabaster font-medium tracking-wide">KONU</span></div></div>
+          </div><div class="pt-4 mt-2 border-t border-white/10 flex items-center gap-3.5"><div class="w-10 h-10 rounded-sm overflow-hidden flex items-center justify-center bg-white p-1 border border-gold-trevita/30"><img alt="KONU Logo" class="w-full h-full object-contain" src="/assets/images/konu-logo.webp" width="160" height="160" loading="lazy" decoding="async"></div><div class="flex flex-col"><span class="text-[9px] uppercase font-semibold tracking-widest text-gold-light">Exclusive Marketing Partner</span><span class="font-cormorant text-base text-alabaster font-medium tracking-wide">KONU</span></div></div>
 </div>
 <div class="md:col-span-3 space-y-2">
 <span class="text-[10px] uppercase font-semibold tracking-widest text-gold-light block mb-3">Residential Pavilions</span>
@@ -1000,6 +1069,62 @@
 </div>
 </div>
 </footer>
+<!-- POPUP PRIVATE PREVIEW MODAL (BLACK & WARM BEIGE) -->
+<div aria-labelledby="popup-modal-title" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm" id="popup-enquiry-modal" role="dialog">
+<div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto bg-[#F4F1EA] text-onyx border border-onyx/20 shadow-2xl p-6 sm:p-10">
+<div class="absolute top-0 left-0 right-0 h-1 bg-onyx"></div>
+<button aria-label="Close popup" class="absolute top-4 right-4 w-9 h-9 flex items-center justify-center border border-onyx/20 bg-[#FAFAF7] text-onyx hover:bg-onyx hover:text-[#FAFAF7] transition-colors" id="popup-close-btn" type="button">
+<span class="material-symbols-outlined text-lg leading-none">close</span>
+</button>
+<div class="pr-10 mb-6">
+<h3 class="font-cormorant text-3xl text-onyx font-normal" id="popup-modal-title">Book a Site Visit</h3>
+<p class="text-xs text-charcoal-muted mt-1 font-normal">Enter your details to schedule your visit.</p>
+</div>
+<form class="space-y-4" id="popup-preview-form" onsubmit="handlePopupFormSubmit(event)">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="popupFullName">Name *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-3.5 py-2.5 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="popupFullName" placeholder="Your name" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="popupPhone">Phone *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-3.5 py-2.5 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="popupPhone" pattern="[0-9+ -]{10,15}" placeholder="+91 98000 00000" required="" type="tel">
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="popupEmail">Email *</label>
+<input class="w-full bg-[#FAFAF7] border border-onyx/25 px-3.5 py-2.5 text-sm text-onyx placeholder-charcoal-subtle focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="popupEmail" placeholder="you@example.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="popupConfig">Configuration</label>
+<select class="w-full bg-[#FAFAF7] border border-onyx/25 px-3.5 py-2.5 text-sm text-onyx focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="popupConfig">
+<option class="bg-[#FAFAF7] text-onyx" value="4bhk">4 BHK (4,250 – 4,560 Sq.Ft)</option>
+<option class="bg-[#FAFAF7] text-onyx" value="3.5bhk">3.5 BHK</option>
+<option class="bg-[#FAFAF7] text-onyx" value="3bhk">3 BHK (2,790 – 3,250 Sq.Ft)</option>
+<option class="bg-[#FAFAF7] text-onyx" value="penthouse">Penthouse</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-semibold tracking-widest text-onyx block" for="popupTime">Site Visit Time</label>
+<select class="w-full bg-[#FAFAF7] border border-onyx/25 px-3.5 py-2.5 text-sm text-onyx focus:border-onyx focus:ring-0 focus:outline-none transition-colors" id="popupTime">
+<option class="bg-[#FAFAF7] text-onyx" value="10am-1pm">10:00 AM – 1:00 PM</option>
+<option class="bg-[#FAFAF7] text-onyx" value="2pm-5pm">2:00 PM – 5:00 PM</option>
+</select>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-3.5 bg-onyx text-[#FAFAF7] text-xs font-bold uppercase tracking-widest hover:bg-charcoal transition-colors border border-onyx" type="submit">
+          Book a Site Visit
+        </button>
+</div>
+<div class="hidden p-3 bg-[#E8E2D5] border border-onyx text-center" id="popup-form-alert">
+<span class="text-xs uppercase font-semibold tracking-widest text-onyx block">Request Received</span>
+<p class="text-xs text-charcoal-muted mt-0.5">Thank you. Our team will contact you shortly.</p>
+</div>
+</form>
+</div>
+</div>
 <!-- SCRIPT FOR INTERACTIVE LOGIC (TABS, FILTERS, FORM) -->
 <script>
     // Mobile Drawer Toggle
@@ -1029,7 +1154,10 @@
     function switchResidenceTab(tabId) {
       document.querySelectorAll('.res-tab-pane').forEach(el => el.classList.add('hidden'));
       const activePane = document.getElementById(tabId);
-      if (activePane) activePane.classList.remove('hidden');
+      if (activePane) {
+        activePane.classList.remove('hidden');
+        activePane.classList.add('is-visible');
+      }
 
       document.querySelectorAll('.res-tab-btn').forEach(btn => {
         btn.classList.remove('bg-gold-trevita', 'text-onyx', 'shadow-sm');
@@ -1054,6 +1182,7 @@
         const itemCat = item.getAttribute('data-category');
         if (category === 'all' || itemCat === category) {
           item.classList.remove('hidden');
+          item.classList.add('is-visible');
         } else {
           item.classList.add('hidden');
         }
@@ -1070,29 +1199,87 @@
       });
     }
 
-    // Final Form Submission Feedback
+    // Final Form Submission Redirect
     function handleFormSubmit(e) {
       e.preventDefault();
-      const alertBox = document.getElementById('form-alert');
-      if (alertBox) {
-        alertBox.classList.remove('hidden');
-        setTimeout(() => {
-          alertBox.classList.add('hidden');
-        }, 6000);
-      }
       e.target.reset();
+      window.location.href = '/thank-you';
+    }
+
+    // Popup Enquiry Modal (Pops up every 30 seconds with X close button)
+    const popupModal = document.getElementById('popup-enquiry-modal');
+    const popupCloseBtn = document.getElementById('popup-close-btn');
+
+    function openPopupModal() {
+      if (!popupModal) return;
+      popupModal.classList.remove('hidden');
+      popupModal.classList.add('flex');
+    }
+
+    function closePopupModal() {
+      if (!popupModal) return;
+      popupModal.classList.add('hidden');
+      popupModal.classList.remove('flex');
+    }
+
+    function handlePopupFormSubmit(e) {
+      e.preventDefault();
+      e.target.reset();
+      window.location.href = '/thank-you';
+    }
+
+    if (popupCloseBtn && popupModal) {
+      popupCloseBtn.addEventListener('click', closePopupModal);
+      popupModal.addEventListener('click', (event) => {
+        if (event.target === popupModal) {
+          closePopupModal();
+        }
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !popupModal.classList.contains('hidden')) {
+          closePopupModal();
+        }
+      });
+
+      setInterval(() => {
+        if (popupModal.classList.contains('hidden')) {
+          openPopupModal();
+        }
+      }, 30000);
+    }
+
+    // Dynamic Canonical URL
+    const canonicalEl = document.getElementById('canonical-link');
+    if (canonicalEl && window.location) {
+      canonicalEl.setAttribute('href', window.location.origin + window.location.pathname);
+    }
+
+    // Scroll Reveal Animations via IntersectionObserver (GPU-composited, zero scroll-jank)
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-scale');
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+      revealEls.forEach(el => revealObserver.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    }
+
+    // Subtle Passive Header Elevation on Scroll
+    const siteHeader = document.getElementById('site-header');
+    if (siteHeader) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 36) {
+          siteHeader.classList.add('shadow-2xl', 'bg-onyx-deep/95');
+        } else {
+          siteHeader.classList.remove('shadow-2xl', 'bg-onyx-deep/95');
+        }
+      }, { passive: true });
     }
   </script>
-
-
-
-
-
-
-
-
-
-
-
-
 </body></html>
