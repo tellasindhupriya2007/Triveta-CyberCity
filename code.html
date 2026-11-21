@@ -1343,8 +1343,19 @@
         }
       } catch (_err) {}
       try {
+        const configSelect = form.querySelector('select[name="LEADCF161"]');
+        const timeSelect = form.querySelector('select[name="LEADCF162"]');
+        const formLocation = form.id === 'popup-webform1320106000002826028' ? 'popup_modal' : 'inline_enquiry';
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'site_visit_form_submit', form_id: form.id });
+        window.dataLayer.push({
+          event: 'site_visit_form_submit',
+          form_id: form.id,
+          form_location: formLocation,
+          unit_configuration: configSelect ? configSelect.value : '',
+          visit_time_slot: timeSelect ? timeSelect.value : '',
+          has_visit_date: Boolean(hiddenDate && hiddenDate.value),
+          lead_source: 'zoho_crm'
+        });
       } catch (_err) {}
 
       const params = new URLSearchParams();
@@ -1362,14 +1373,39 @@
       }).catch(() => {});
 
       const timeoutPromise = new Promise(resolve => setTimeout(resolve, 1500));
+      const minBeaconDelay = new Promise(resolve => setTimeout(resolve, 250));
 
-      Promise.race([submitPromise, timeoutPromise]).then(() => {
+      Promise.all([Promise.race([submitPromise, timeoutPromise]), minBeaconDelay]).then(() => {
         form.reset();
         window.location.href = '/thank-you';
       });
 
       return false;
     }
+
+    // Track trevita_form_start once per form on first field interaction
+    [
+      { id: 'webform1320106000002826028', location: 'inline_enquiry' },
+      { id: 'popup-webform1320106000002826028', location: 'popup_modal' }
+    ].forEach(({ id, location }) => {
+      const formEl = document.getElementById(id);
+      if (!formEl) return;
+      let started = false;
+      formEl.addEventListener('focusin', (evt) => {
+        if (started) return;
+        const target = evt.target;
+        if (!target || target.type === 'hidden' || target.type === 'submit' || target.tagName === 'BUTTON') return;
+        started = true;
+        try {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'trevita_form_start',
+            form_id: id,
+            form_location: location
+          });
+        } catch (_err) {}
+      });
+    });
 
     // Popup Enquiry Modal (Pops up every 30 seconds with X close button)
     const popupModal = document.getElementById('popup-enquiry-modal');
