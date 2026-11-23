@@ -16,7 +16,7 @@ function sendHtmlFile(req, res, filePath) {
   const html = fs.readFileSync(filePath);
   const acceptEncoding = req.headers['accept-encoding'] || '';
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.setHeader('Cache-Control', 'public, max-age=300');
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.setHeader('Vary', 'Accept-Encoding');
 
   if (acceptEncoding.includes('gzip')) {
@@ -54,8 +54,9 @@ app.use(
 
 app.get('/thank-you', (req, res) => sendHtmlFile(req, res, thankYouPath));
 app.get('/thank-you.html', (req, res) => sendHtmlFile(req, res, thankYouPath));
+app.get('/code.html', (req, res) => sendHtmlFile(req, res, htmlPath));
 app.get('/', (req, res) => sendHtmlFile(req, res, htmlPath));
-app.use(express.static(__dirname, { index: 'code.html', maxAge: '1d' }));
+app.use(express.static(__dirname, { index: false }));
 app.use((req, res) => sendHtmlFile(req, res, htmlPath));
 
 app.listen(PORT, '0.0.0.0', () => {
